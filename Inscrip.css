@@ -1,0 +1,37 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background-origin: padding-box;
+}
+.parentformul{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    
+}
+
+.formulaire{
+    display: flex; 
+
+}
+.bordure{
+    border-bottom: 2px rgba(0, 0, 255, 0.527) solid;
+
+}
+h2{
+    text-align: center;
+    padding-right: 250px;
+    border-bottom: 5px #0cac76 solid;
+}
+.labelrek{
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+.signinwith{
+    display: flex;
+    justify-items: center;
+    align-content: center;
+    gap: 43px ;
+    background-color: #cccccc23;
+}

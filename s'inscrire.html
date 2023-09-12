@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script>
+           $(function() {
+              $("#includeHtml").load("footer.html");
+           });
+        </script>
+
+    <link rel="stylesheet" href="Inscrip.css">
+    <title>LONGRICH Bioscience</title>
+</head>
+
+<body>
+
+    
+    <div class="imglogo"><img src="images/logo avec nm.webp" alt=""></div>
+            
+    <br><br><br><br><br><br> <br>
+
+    <main>
+        <form action="traintement.php" method="post">
+            <h2>Create an account</h2>
+            <div class="parentformul">
+    
+                <div class="formulaire">
+
+                    <div class="labelrek">
+                        
+                        <label for="nom">Nom </label><br> <br> 
+                        <label for="prenom">Prénom </label><br> <br>
+                        <label for="email">Email </label><br> <br>
+                        <label for="motdepasse">Mot de passe </label>
+                    </div>
+                    <div>
+                        <input type="text" id="nom" name="nom" ><br> <br> 
+                        <input type="text" id="prenom" name="prenom" ><br><br>
+                        <input type="email" id="email" name="email" required><br><br>
+                        <input type="password" id="motdepasse" name="motdepasse" requir><br><br>
+                        <input type="checkbox" name="" id=""> <br><br><br>
+                        <input type="submit" value="Register" >
+                    </div>
+                </div>
+                <div class="signinwith">
+                    <p>OR</p>
+                    <div>
+                        <h3 class="bordure">Sign in with</h3>
+                        <a href="https//www.google.com"><button>Google</button></a> <br> <br>
+                        <a href="#"><button>Facebook</button></a><br><br>
+                        <a href="#"><button>TWitter</button></a>
+                    </div>
+                </div>
+            </div>
+            
+        </form>
+
+    </main> <br><br><br>
+    <div id="includeHtml"></div>
+    
+    
+</body>
+
+</html>

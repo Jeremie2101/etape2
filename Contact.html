@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script>
+           $(function() {
+              $("#includeHtml").load("footer.html");
+           });
+        </script>
+        
+    <link rel="stylesheet" href="Contact.css">
+    
+   
+        <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="imglogo"><img src="images/logo avec nm.webp" alt=""></div>
+            <a href="Acceuil.html">Acceuil</a>
+            <a href="A propos.html">A propos </a>
+            <a href="boutique.html">Boutique</a>
+            <a href="Contact.html">Contact</a>
+            <a href="Temoignage.html">Témoignage</a>
+            <a href="s'inscrire.html">S'inscrire</a>
+            <i class="fa-brands fa-shopify"></i>
+
+        </div>
+    </nav>
+    <br><br><br><br><br><br> <br>
+
+    <header>
+        <img src="images/Longrich Logo_3.webp" alt="">
+    </header>
+    <main>
+        <div>
+            <h2>Rejoignez la Famille Longrich</h2>
+            <p>
+
+                Rejoignez la famille Longrich pour rester à jour sur nos produits, nos promotions spéciales et nos
+                conseils pour un mode de vie sain et naturel. Suivez-nous sur les réseaux sociaux et découvrez notre
+                communauté de clients satisfaits.
+
+                Longrich s'engage à vous fournir des produits naturels de qualité qui favorisent votre bien-être et
+                votre beauté intérieure et extérieure. Explorez notre site dès aujourd'hui et découvrez comment Longrich
+                peut améliorer votre routine quotidienne avec des produits naturels exceptionnels.
+            </p>
+        </div>
+        <h2>Contact</h2>
+        <div class="container">
+            <form action="traitement.php" method="POST">
+                <div>
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom" required><br><br>
+                </div>
+    
+                <div>
+                    <label for="prenom">Prénom :</label>
+                    <input type="text" id="prenom" name="prenom" required><br><br>
+                </div>
+    
+                <div>
+                    <label for="date_naissance">Date de naissance :</label>
+                    <input type="date" id="date_naissance" name="date_naissance" required><br><br>
+                </div>
+    
+                <div>
+                    <label for="lieu_naissance">Lieu de naissance :</label>
+                    <input type="text" id="lieu_naissance" name="lieu_naissance" required><br><br>
+                </div>
+    
+                <div>
+                    <label for="tel">Téléphone :</label>
+                    <input type="tel" id="tel" name="tel" required><br><br>
+                </div>
+    
+                <div>
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" required><br><br>
+                </div>
+    
+                <div>
+                    <label for="ville_pays">Ville ou pays :</label>
+                    <input type="text" id="ville_pays" name="ville_pays" required><br><br>
+                </div>
+    
+                <div><input type="submit" value="Envoyer"></div>
+            </form>
+            
+        </div>
+    </main>
+    <div id="includeHtml"></div>
+</body>
+
+</html>
