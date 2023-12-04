@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="se_connecter.css">
+    <title>LONGRICH</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Se connecter</h1>
+        <form action="traitement.php" method="post" id="login-form">
+            <label for="nom">Nom(s)</label>
+            <input type="text" name="nom" id="nom" required>
+            
+            <label for="prenom">Prénom</label>
+            <input type="text" name="prenom" id="prenom" required>
+            
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+            
+            <input type="submit" value="Connexion" onclick="afficherAlerte()">
+        </form>
+        
+        <div class="social-login">
+            <p>Connectez-vous avec :</p>
+            <button class="google-login"><i class="fab fa-google-plus-square"></i></button>
+            <button class="facebook-login"><i class="fab fa-facebook"></i></button>
+            <button class="twitter-login"><i class="fab fa-instagram"></i></button>
+        </div>
+        
+    </div>
+    <script>
+        function afficherAlerte() {
+            alert('Connexion effectué avec succè!'); // Message d'alerte
+        }
+    </script>
+    
+</body>
+</html>

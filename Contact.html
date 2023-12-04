@@ -8,17 +8,13 @@
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-        <script>
-           $(function() {
-              $("#includeHtml").load("footer.html");
-           });
-        </script>
+        
         
     <link rel="stylesheet" href="Contact.css">
+    <link rel="stylesheet" href="java/contact.js">
     
    
-        <title>Document</title>
+        <title>Longrich sen</title>
 </head>
 
 <body>
@@ -29,29 +25,29 @@
             <a href="A propos.html">A propos </a>
             <a href="boutique.html">Boutique</a>
             <a href="Contact.html">Contact</a>
-            <a href="Temoignage.html">Témoignage</a>
-            <a href="s'inscrire.html">S'inscrire</a>
-            <i class="fa-brands fa-shopify"></i>
+            <div class="boutonM">
+                <button class="bouton-lien ">connexion</button>
+                <div class="deroulant-menu">
+                    <a href="s'inscrire.html">S'inscrire</a>
+                    <a href="se_connecter.html">Se connecter</a>
+                </div>
+            </div>
+            
 
         </div>
     </nav>
-    <br><br><br><br><br><br> <br>
+    <br><br><br><br><br><br><br>
 
     <header>
-        <img src="images/Longrich Logo_3.webp" alt="">
+        
     </header>
     <main>
         <div>
             <h2>Rejoignez la Famille Longrich</h2>
             <p>
-
                 Rejoignez la famille Longrich pour rester à jour sur nos produits, nos promotions spéciales et nos
                 conseils pour un mode de vie sain et naturel. Suivez-nous sur les réseaux sociaux et découvrez notre
                 communauté de clients satisfaits.
-
-                Longrich s'engage à vous fournir des produits naturels de qualité qui favorisent votre bien-être et
-                votre beauté intérieure et extérieure. Explorez notre site dès aujourd'hui et découvrez comment Longrich
-                peut améliorer votre routine quotidienne avec des produits naturels exceptionnels.
             </p>
         </div>
         <h2>Contact</h2>
@@ -92,12 +88,21 @@
                     <input type="text" id="ville_pays" name="ville_pays" required><br><br>
                 </div>
     
-                <div><input type="submit" value="Envoyer"></div>
+                <div>
+                    <input type="submit" value="Envoyer" id="click" onclick="afficherAlerte()">
+                </div>
+            
+                <script>
+                    function afficherAlerte() {
+                        alert('Envoie effectué avec succè!'); // Message d'alerte
+                    }
+                </script>
             </form>
+            
             
         </div>
     </main>
-    <div id="includeHtml"></div>
+    
 </body>
 
 </html>

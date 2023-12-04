@@ -1,6 +1,7 @@
 body{
     margin: 0%;
     padding: 0%;
+    background-color: #ccc;
 
 }
 .navbar{
@@ -16,6 +17,60 @@ body{
 .navbar a{
     text-decoration: none;
 }
+/* Styles de base pour le bouton et le menu déroulant */
+.boutonM {
+	position: relative;
+	display: inline-block;
+}
+
+.bouton-lien {
+	background-color: #007bff; /* Couleur de fond du bouton */
+	color: #fff; /* Couleur du texte du bouton */
+	padding: 10px 20px; /* Espacement interne du bouton */
+	border-radius: 25px;
+	cursor: pointer;
+	border: solid 1px;
+}
+
+  /* Styles du menu déroulant (caché par défaut) */
+.deroulant-menu {
+	display: none;
+	position: absolute;
+	background-color: #fff; /* Couleur de fond du menu déroulant */
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Ombre */
+	z-index: 1; /* Assurez-vous que le menu déroulant apparaît au-dessus du contenu */
+}
+
+  /* Affichage du menu déroulant au survol du bouton */
+.boutonM:hover .deroulant-menu {
+	display: block;
+}
+
+  /* Styles des liens dans le menu déroulant */
+.deroulant-menu a {
+	display: block;
+	padding: 10px 20px; /* Espacement interne des liens */
+	text-decoration: none;
+	color: #333; /* Couleur du texte des liens */
+}
+
+  /* Styles des liens au survol */
+
+.deroulant-menu a:hover {
+	background-color: #007bff; /* Couleur de fond au survol */
+	color: #fff; /* Couleur du texte au survol */
+}
+
+
+p{
+  padding-left: 200px;
+  padding-right: 200px;
+  font-weight: 700;
+  background-color: rgba(59, 185, 147, 0.411);
+  margin-left: 275px;
+  margin-right: 275px;
+
+}
   /* Style pour le conteneur principal */
 .container {
     max-width: 600px;
@@ -26,8 +81,11 @@ body{
   /* Style pour le titre "Contact" */
   h2 {
     text-align: center;
-    font-size: 24px;
+    font-size: 54px;
     margin-bottom: 20px;
+    border: solid 2px rgba(62, 160, 91, 0.699);
+    margin-left: 275px;
+    margin-right: 275px;
   }
   
   /* Style pour le formulaire */
@@ -55,7 +113,7 @@ body{
   input[type="date"],
   input[type="tel"],
   input[type="email"] {
-    width: 100%;
+    width: 95%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -98,5 +156,11 @@ body{
     text-decoration: none;
     color: #007bff;
     font-size: 24px;
+  }
+ 
+  .contenaire-alerte{
+    justify-content: center;
+    align-items:center ;
+    display: flex;
   }
   

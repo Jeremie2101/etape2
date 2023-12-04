@@ -8,9 +8,10 @@ body{
     align-items: center;
     margin: auto;
     position: fixed;
-    width: 209vh;
+    width: 205vh;
     background-color:#fff;
     box-shadow: 2px 8px 10px rgba(61, 61, 228, 0.384);
+	z-index: 1000;
 }
 .navbar a{
 text-decoration: none;
@@ -21,8 +22,11 @@ header{
     margin: 0%;
     padding: 0%;
 }
+.texte{
+	text-align-last: center;
+}
 .imprinci{
-	height: 55vh;
+	height: 52.7vh;
 }
 
 @media screen and (max-width: 800px){
@@ -32,21 +36,111 @@ header{
 }
 /*Main*/
 main{
-	margin-left: 45px;
-	margin-right: 45px;
+	margin-left: 75px;
+	margin-right: 75px;
 }
 .chef{
 	display: flex;
 	align-items: center;
 	text-align: center;
 	box-shadow: 2px 8px 6px 0px rgba(61, 61, 228, 0.384);
+	gap: 10px;
 
 }
 .chef  .kiestil{
 	border: solid 0px;
-	background-color: #cccccc50;
-	padding: auto;
-	float: right;
+	background-color: #a2c57928;
+	padding: 20px;
+
 }
 
 
+
+/* Styles de base pour le bouton et le menu déroulant */
+.boutonM {
+	position: relative;
+	display: inline-block;
+}
+
+.bouton-lien {
+	background-color: #A2C579; /* Couleur de fond du bouton */
+	color: #fff; /* Couleur du texte du bouton */
+	padding: 10px 20px; /* Espacement interne du bouton */
+	border-radius: 25px;
+	cursor: pointer;
+	border: solid 1px;
+}
+
+  /* Styles du menu déroulant (caché par défaut) */
+.deroulant-menu {
+	display: none;
+	position: absolute;
+	background-color: #fff; /* Couleur de fond du menu déroulant */
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Ombre */
+	z-index: 1; /* Assurez-vous que le menu déroulant apparaît au-dessus du contenu */
+}
+
+  /* Affichage du menu déroulant au survol du bouton */
+.boutonM:hover .deroulant-menu {
+	display: block;
+}
+
+  /* Styles des liens dans le menu déroulant */
+.deroulant-menu a {
+	display: block;
+	padding: 10px 20px; /* Espacement interne des liens */
+	text-decoration: none;
+	color: #333; /* Couleur du texte des liens */
+}
+
+  /* Styles des liens au survol */
+
+.deroulant-menu a:hover {
+	background-color: #A2C579; /* Couleur de fond au survol */
+	color: #fff; /* Couleur du texte au survol */
+}
+
+.histoire{
+    display:flex;
+    justify-content: center;
+	gap: 70px;
+	padding-top: 10px;
+	border-top: 0.8px solid green;
+}
+.histoire .visuel{
+	border-left: 0.5px solid green;
+	padding-left: 10px;
+}
+.fleche{
+	margin-left: 200px;
+}
+.mot_text{
+	font-size: 40px;
+	padding-top: 90px;
+	font: 300;
+}
+
+.RECOMPENSES{
+	display: flex;
+	justify-content: center;
+	gap: 15px;
+	align-content: center;
+}
+h1{
+	text-align: center;
+}
+.bande-deroulante {
+    background-color: #7c975d44;
+    color: #333;
+    padding: 10px;
+}
+
+marquee {
+    white-space: nowrap; /* Empêche le texte de passer à la ligne */
+    overflow: hidden; /* Masque le texte qui dépasse de la bande */
+    box-sizing: border-box; /* Empêche le texte de déborder de la boîte */
+    width: 100%; /* Largeur de la bande */
+    height: 50px; /* Hauteur de la bande */
+    font-size: 15px; /* Taille de la police */
+    line-height: 15px; /* Hauteur de ligne égale à la hauteur de la bande */
+}

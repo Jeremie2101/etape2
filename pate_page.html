@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script>
+        $(function () {
+            $("#includeHtml").load("footer.html");
+        });
+    </script>
+    <link rel="stylesheet" href="pate_page.css">
+
+    <title>LONGRICH Bioscience</title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="navbar">
+            <div class="imglogo"><img src="images/logo avec nm.webp" alt="" width="200px"></div>
+            <a href="Acceuil.html">Acceuil</a>
+            <a href="A propos.html">A propos </a>
+            <a href="boutique.html">Boutique</a>
+            <a href="Contact.html">Contact</a>
+            <div class="boutonM">
+                <button class="bouton-lien ">connexion</button>
+                <div class="deroulant-menu">
+                    <a href="s'inscrire.html">S'inscrire</a>
+                    <a href="se_connecter.html">Se connecter</a>
+                </div>
+            </div>
+            <div>
+                <i class="fa-brands fa-shopify"></i>
+                <input type="number" value="0" id="1" class="qty" readonly>
+            </div>
+        </div>
+    </nav>
+    <header></header>
+    <main>
+        <section id="Produit">
+            <div>
+                <img src="images/WhatsApp_Image_2023-09-08_at_20.13.48-removebg-preview.png" alt="" width="30%">
+
+            </div>
+            <div class="descript">
+                <h1><u>Pate dentifrice Longrich</u></h1>
+                <h2>Description du produit</h2>
+                <p>Pâte Dentifrice Longrich à Base de Thé Blanc 200ml LO00119 - Sodishop : Ce dentifrice Longrich à base
+                    de thé blanc prévient les caries, la gingivite, combat la mauvaise haleine et prévient la formation
+                    de tartre. Il est conçu pour prendre soin de votre santé bucco-dentaire.</p>
+                <span class="price">$400</span><br><br><br>
+                <button class="increment" type="button">+</button>
+                <button class="decrement" type="button">-</button><br><br> <br><br><br>
+                <div class="bam">
+                    <div class="sum">
+                        <h2>Somme total:</h2>
+                        <span id="total">0</span>
+                    </div>
+                    <button class="achat">Acheter</button>
+                </div>
+            </div>
+        </section>
+        
+       
+        <section>
+            <div>
+                <h3>D'AUTRE VERTUES DU DENTIFRICE LONGRICH</h3>
+                <p>Soin de la peau : Outre ses bienfaits pour les dents, la pâte au thé blanc de Longrich peut également
+                    être utilisée pour prendre soin de votre peau. Elle régule la production de mélanine, ce qui peut aider
+                    à éclaircir les taches et à uniformiser le teint de la peau. Elle peut également prendre soin des
+                    changements hormonaux qui peuvent causer des problèmes cutanés.
+                </p>
+            
+            
+
+        </section>
+    </main>
+    <div id="includeHtml"></div>
+    <script src="java/pate_page.js"></script>
+</body>
+
+</html>
